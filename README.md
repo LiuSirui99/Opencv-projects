@@ -25,14 +25,15 @@ $ pip3 install opencv-python
 
 In case of opencv in c++, git clone one of my xcode projects and then modify the path 
 of include hearder and library as it installed in your machine.
+```
 
+### Testing
 
 For testing your settings, clone the Translation.py in testopencv folder, 
 choose your image and press run. 
 You should see an new window which displays the result of 
 translation of your image.
 
-```
 
 
 ## Contributing
