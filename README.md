@@ -23,10 +23,14 @@ Just go to the terminal with the command:
 
 $ pip3 install opencv-python
 
-In case of opencv in c++, git clone one of my xcode projects and then modify the path of include hearder and library as it installed in your machine.
+In case of opencv in c++, git clone one of my xcode projects and then modify the path 
+of include hearder and library as it installed in your machine.
 
 
-For testing your settings, clone the Translation.py in testopencv folder, choose your image and press run. You should see an new window which displays the result of translation of your image.
+For testing your settings, clone the Translation.py in testopencv folder, 
+choose your image and press run. 
+You should see an new window which displays the result of 
+translation of your image.
 
 ```
 
@@ -56,7 +60,9 @@ For testing your settings, clone the Translation.py in testopencv folder, choose
 ## Usage
 
 ```
-Follow the step by step opencv codding process. Including basic core operations, image processing, camera calibrations, 3D reconstruction and object detections.
+Follow the step by step opencv codding process. 
+Including basic core operations, image processing, 
+camera calibrations, 3D reconstruction and object detections.
 ```
 
 
