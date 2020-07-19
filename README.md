@@ -19,12 +19,15 @@ My projects in master degree semester 1， including my learning and debugging p
      I am using MacOS Catalina version 10.15.6.
      
     -**Opencv-python**:
-        For setting up the opencv-python running env I am using pycharm as the editor. 
+    
+    For setting up the opencv-python running env I am using pycharm as the editor. 
         Just go to the terminal with the command: 
         `$ pip3 install opencv-python`
-       For testing your settings, clone the Translation.py in testopencv folder, choose your image and press run. You should see an new window which displays the result of translation of your image.
+    
+    For testing your settings, clone the Translation.py in testopencv folder, choose your image and press run. You should see an new window which displays the result of translation of your image.
         
    -**Opencv-c++**:
+   
    1. Install Xcode
    
    2. Install Homebrew
@@ -60,6 +63,7 @@ My projects in master degree semester 1， including my learning and debugging p
 - **For Ubuntu:**
 
     **Installation**.
+    
     Install the opencv release from official website: <a href="https://opencv.org/releases/" target="_blank">`https://opencv.org/releases/`</a>.
 
     Extract the directory and apply
@@ -70,6 +74,7 @@ My projects in master degree semester 1， including my learning and debugging p
     ```
 
     **Configuring**. 
+    
     Run cmake [<some optional parameters>] <path to the OpenCV source directory>
 
     For example
@@ -79,10 +84,13 @@ My projects in master degree semester 1， including my learning and debugging p
 
     build type: `CMAKE_BUILD_TYPE=Release\Debug`
     to build with modules from opencv_contrib set OPENCV_EXTRA_MODULES_PATH to <path to opencv_contrib/modules/>
+    
     set BUILD_DOCS for building documents
+    
     set BUILD_EXAMPLES to build all examples
 
     **Build**. 
+    
     From build directory execute make, it is recommended to do this in several threads
 
     For example
@@ -91,10 +99,12 @@ My projects in master degree semester 1， including my learning and debugging p
     ```
 
     **Library**.
+    
     To install libraries, execute the following command from build directory
     ```
     $ sudo make install
     ```
+    
     **Install the dependencies**: 
     ```
     $ sudo apt-get install build-essential libgtk2.0-dev libvtk5-dev libjpeg-dev libtiff4-dev libjasper-dev libopenexr-dev libtbb-dev
@@ -103,9 +113,11 @@ My projects in master degree semester 1， including my learning and debugging p
     ```
 
     **Testing**.
+    
     For testing your settings, clone the repo <a href="https://github.com/opencv/opencv_extra" target="_blank">`https://github.com/opencv/opencv_extra`</a>.
 
     set OPENCV_TEST_DATA_PATH environment variable to <path to opencv_extra/testdata>.
+    
     execute tests from build directory.
 
     For example
