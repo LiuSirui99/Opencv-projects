@@ -17,6 +17,7 @@ My projects in master degree semester 1， including my learning and debugging p
 - **For MacOS:**
 
      I am using MacOS Catalina version 10.15.6.
+     
     -**Opencv-python**:
         For setting up the opencv-python running env I am using pycharm as the editor. 
         Just go to the terminal with the command: 
