@@ -16,15 +16,45 @@ My projects in master degree semester 1， including my learning and debugging p
 ### Setup
 - **For MacOS:**
 
-    I am using MacOS Catalina version 10.15.6.
-
-    For setting up the opencv-python running env I am using pycharm as the editor. 
-    Just go to the terminal with the command: 
-    
-    $ pip3 install opencv-python
+     I am using MacOS Catalina version 10.15.6.
+    -**Opencv-python**:
+        For setting up the opencv-python running env I am using pycharm as the editor. 
+        Just go to the terminal with the command: 
+        `$ pip3 install opencv-python`
+       For testing your settings, clone the Translation.py in testopencv folder, choose your image and press run. You should see an new window which displays the result of translation of your image.
+        
+   -**Opencv-c++**:
+   1. Install Xcode
    
-    In case of opencv in c++, git clone one of my xcode projects and then modify the path 
-    of include hearder and library as it installed in your machine.
+   2. Install Homebrew
+   
+   3. Install OpenCV
+   
+        `$ brew install opencv`
+        in case you already have opencv installed, run
+        `$ brew upgrade opencv`
+        for ensure the latest version.
+    4. Install pkg-config
+    
+        pkg-config is a helper tool used when compiling applications and libraries. It helps you insert the correct compiler options on the command line rather than hard-coding values. 
+        `$ brew install pkg-config`
+        
+    5. View OpenCV linker flags
+    ` $ pkg-config --cflags --libs /usr/local/Cellar/opencv/4.3.0_5/lib/pkgconfig/opencv4.pc`
+    6. Test your env 
+        Git clone one of my xcode projects and then modify the path of include hearder and library as it installed in your machine.
+        
+        - Run in xcode:
+        1. Set the Header Search Path 
+        `/usr/local/Cellar/opencv/<version_number>/include`
+        2. Set the Library Search Path
+        `/usr/local/Cellar/opencv/<version_number>/lib`
+        3. Set the Other Linker Flags
+        Set the other linker flags with all the flag values obtained after running pkg-config command above.
+        4. Press Cmd+R to run your Xcode project.
+        
+        - Run from terminal :
+        `g++ $(pkg-config --cflags --libs /usr/local/Cellar/opencv/4.3.0_5/lib/pkgconfig/opencv4.pc) -std=c++11  main.cpp -o myoutput`
 
 - **For Ubuntu:**
 
@@ -80,15 +110,7 @@ My projects in master degree semester 1， including my learning and debugging p
     For example
     ```
     $ <cmake_build_dir>/bin/opencv_test_core
-    ```
-
-
-### Testing
-For testing your settings, clone the Translation.py in testopencv folder, choose your image and press run. You should see an new window which displays the result of translation of your image.
-
-
-
-
+   ```
 
 
 ## Contributing
